@@ -8,7 +8,7 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 
 This should render MathJax- this is inline: This sentence uses <span>'$'</span> delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
 
-...<span>'n'</span> this works in-line in a blog post (not GitHub md), the expression with escape backslashes: \(\sqrt{3x-1}+(1+x)^2\)
+...<span>'n'</span> this works in-line in a blog post (not GitHub md), the expression with escape backslashes: \\(\sqrt{3x-1}+(1+x)^2\\)
 
 ...and this is a block:
 
