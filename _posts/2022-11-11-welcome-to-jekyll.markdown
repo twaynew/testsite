@@ -6,9 +6,9 @@ mermaid: true
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-This should render MathJax- this is inline: This sentence uses <span>'$'</span> delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+This sentence uses <span>'$'</span> delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
 
-...<span>'n'</span> this works in-line in a blog post (not GitHub md), the expression with escape backslashes: \\(\sqrt{3x-1}+(1+x)^2\\)
+...<span>'n'</span> in-line (not GitHub md), escape backslashes: \\(\sqrt{3x-1}+(1+x)^2\\)
 
 ...and this is a block:
 
