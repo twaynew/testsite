@@ -16,6 +16,10 @@ This should render MathJax- this is inline: This sentence uses <span>'$'</span> 
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 ```
 
+...the same block using the double <span>'$'</span> delimiters:
+
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
 And here is some Mermaid (fenced as the convention at GitHub):
 
 ```mermaid
