@@ -1,3 +1,4 @@
+<!--
 <script>
    // select <pre class="math"> _and_ <pre><code class="language-math">
   document.querySelectorAll("pre.math, pre>code.language-math").forEach($el => {
@@ -19,6 +20,20 @@
     }
   };
   </script>
+-->
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$']],
+      displayMath: [
+      ['$$', '$$'],
+      ['<pre><code class="language-math">', '<//code><//pre>']
+    ]
+    }
+  };
+  </script>
+
   
   <script type="text/javascript" id="MathJax-script" async
      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
