@@ -1,0 +1,26 @@
+<script>
+   // select <pre class="math"> _and_ <pre><code class="language-math">
+  document.querySelectorAll("pre.math, pre>code.language-math").forEach($el => {
+  // if the second selector got a hit, reference the parent <pre>
+  if ($el.tagName === "CODE")
+    $el = $el.parentElement
+  // put the MathJax contents between the expected delimiters, '\[' and '\]'
+  // plus keep the original contents in a nice <details>
+  $el.outerHTML = `
+    \[${$el.textContent}\]
+  `
+  })
+</script>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['<pre><code class="language-math">', '</code></pre>']]
+    }
+  };
+  </script>
+  
+  <script type="text/javascript" id="MathJax-script" async
+     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
