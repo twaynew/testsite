@@ -16,6 +16,9 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 
 ```liquid
 <h1>{{ page.food }}</h1>
+{% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
 ```
 
 This sentence uses <span>'$'</span> delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
