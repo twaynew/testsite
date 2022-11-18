@@ -14,16 +14,14 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-```liquid
-{% raw %}
+<code>{&#37; raw &#37;}</code>
 
 {{ page.food }}
 {% for repository in site.github.public_repositories %}
   * [{{ repository.name }}]({{ repository.html_url }})
 {% endfor %}
 
-{% endraw %}
-```
+<code>{&#37; endraw &#37;}</code>
 
 This sentence uses <span>'$'</span> delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
 
