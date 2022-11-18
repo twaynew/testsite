@@ -14,7 +14,7 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-```
+```liquid
 {% raw %}
 
 {{ page.food }}
