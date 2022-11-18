@@ -24,6 +24,15 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 {% endraw %}
 ```
 
+```liquid
+{% assign openTag = '{%' %}
+{% raw %}
+This is how you show the termination of the `{% raw %}` tag inside itself: 
+{% endraw %}{{ openTag }} endraw %}{% raw %}
+This content is back inside the {% raw %} block
+{% endraw %}
+```
+
 This sentence uses <span>'$'</span> delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
 
 ...<span>'n'</span> in-line (not GitHub md), escape backslashes: \\(\sqrt{3x-1}+(1+x)^2\\)
