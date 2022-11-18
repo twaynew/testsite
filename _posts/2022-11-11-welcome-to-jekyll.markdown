@@ -14,7 +14,7 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-
+```
 {% raw %}
 
 {{ page.food }}
@@ -23,6 +23,7 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 {% endfor %}
 
 {% endraw %}
+```
 
 This sentence uses <span>'$'</span> delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
 
