@@ -14,24 +14,14 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-```liquid
-{% assign openTag = '{%' %}
 {% raw %}
+```liquid
 {{ page.food }}
 {% for repository in site.github.public_repositories %}
   * [{{ repository.name }}]({{ repository.html_url }})
 {% endfor %}
-{% endraw %}
 ```
-
-```liquid
-{% assign openTag = '{%' %}
-{% raw %}
-This is how you show the termination of the `{% raw %}` tag inside itself: 
-{% endraw %}{{ openTag }} endraw %}{% raw %}
-This content is back inside the {% raw %} block
 {% endraw %}
-```
 
 This sentence uses <span>'$'</span> delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
 
