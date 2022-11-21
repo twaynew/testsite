@@ -14,6 +14,7 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
+<!-- {% raw %} -->
 ```javascript
 const myHeading = document.querySelector("h1");
 myHeading.textContent = "Hello world!";
@@ -31,6 +32,7 @@ myHeading.textContent = "Hello world!";
     </div>
   </script>
 ```
+<!-- {% endraw %} -->
 
 <!-- {% raw %} -->
 ```liquid
