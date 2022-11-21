@@ -17,6 +17,19 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 ```javascript
 const myHeading = document.querySelector("h1");
 myHeading.textContent = "Hello world!";
+  <!-- Creating a template using #if and #else helper: -->
+  <script id="myTemplate" type="text/x-handlebars-template">
+    <div>
+        {{#each posts}}
+          <h1>{{this.title}}<h1>
+          {{#if this.content}}
+              <h3>{{this.content}}</h3>
+          {{else}}
+              <h3>No content found!</h3>
+          {{/if}}
+        {{/each}}
+    </div>
+  </script>
 ```
 
 <!-- {% raw %} -->
