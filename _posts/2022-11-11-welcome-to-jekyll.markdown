@@ -14,6 +14,11 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
+```javascript
+const myHeading = document.querySelector("h1");
+myHeading.textContent = "Hello world!";
+```
+
 <!-- {% raw %} -->
 ```liquid
 {{ page.food }}
